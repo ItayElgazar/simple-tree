@@ -1,4 +1,2 @@
 # simple-tree
-# simple-tree
-# simple-tree
-# simple-tree
+To install type -  ` npm install `

@@ -1,0 +1,8 @@
+.expand {
+    cursor: pointer;
+}
+
+.contact-item:hover {
+    cursor: pointer;
+    color: yellowgreen;
+}

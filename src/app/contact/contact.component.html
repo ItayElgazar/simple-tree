@@ -1,0 +1,10 @@
+<div [style.marginLeft.px]="indent" [class.bold]="hasChildrens()">
+  <span class="expand" *ngIf="hasChildrens() && !expanded" (click)="expand()">[+]</span>
+  <span class="expand" *ngIf="hasChildrens() && expanded" (click)="expand()">[-]</span> 
+  <span class="contact-item" (click)="expand()">{{contact.name}}</span>
+</div>
+<div *ngIf="hasChildrens()">
+  <div *ngFor="let contact of contact.contacts">
+    <app-contact [indent]="indent+20" [contact]="contact" *ngIf="expanded"></app-contact>
+  </div>
+</div>
